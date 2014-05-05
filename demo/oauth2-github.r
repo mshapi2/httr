@@ -9,7 +9,7 @@ oauth_endpoints("github")
 #    the GITHUB_CONSUMER_SECRET environmental variable.
 #
 #    Use http://localhost:1410 as the callback url
-myapp <- oauth_app("your app name", "Client ID here", secret="Client Secret here")
+myapp <- oauth_app("your app name", key="Client ID here", secret="Client Secret here")
 # 3. Get OAuth credentials
 github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
 
